@@ -20,7 +20,8 @@ let promise
 let btn = document.querySelector("#btn")
 btn.addEventListener("click", ()=>{
     console.log("i'm clicked")
-    promise = sdk.database.listDocuments('61de490873d42');
+    promise = sdk.database.listDocuments('61de71bd1e52f');
+    // promise = sdk.database.getDocument('61de71bd1e52f', '61de71f08cdab');
     promise.then(function (response) {
         console.log(response); // Success
     }, function (error) {
